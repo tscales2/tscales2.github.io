@@ -61,7 +61,7 @@ nav {
     z-index: 1;
     left: 0;
     right: 0;
-    color: #ffffff;
+    color: #3f3d56;
     font-family: 'Prata', serif;
     font-size: 22px;
 }
@@ -75,7 +75,7 @@ nav {
     margin: 0 15px;
 }
 .navigation li a {
-    color: #ffffff;
+    color: #3f3d56;
     text-decoration: none;
 }
 
