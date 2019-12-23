@@ -7,14 +7,7 @@ body {
     font-family: 'Inconsolata', monospace;
 }
 
-.right-col {
-    background-color: #e661db;
-}
 
-.left-col {
-    background-color: #8a1950;
-
-}
 .top-container{
     width: 500px;
     margin: 0 auto;
@@ -28,6 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    background-color: #db1449;
 }
 .scroll{
     color: aqua;
@@ -40,7 +34,7 @@ img {
 }
 
 footer {
-    background-color: #712b4d;
+    background-color: #db1449;
     height: 220px;
     background-image: url('img/socialmedia.svg');
     background-repeat: no-repeat;
@@ -55,7 +49,7 @@ footer {
 }
 
 .social-icon {
-    height: 60px;
+    height: 50px;
 }
 
 .social-icons-container {
@@ -67,7 +61,7 @@ nav {
     z-index: 1;
     left: 0;
     right: 0;
-    color: #99408a;
+    color: #ffffff;
     font-family: 'Prata', serif;
     font-size: 22px;
 }
@@ -81,7 +75,7 @@ nav {
     margin: 0 15px;
 }
 .navigation li a {
-    color: #99408a;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -109,7 +103,7 @@ h3{
 h4{
     font-size: 32px;
     color: #16736e;
-    background-color: #75e3dd;
+    background-color: #61e678;
     display: inline-block;
     margin: 0;
     padding: 4px;
@@ -125,22 +119,22 @@ p{
     text-decoration: none;
 }
 .aboutMe h2{
-    color: #4dc2bd;
+    color: #49db14;
 }
 .cProjects h2{
-    color: #003170
+    color: #49db14
 }
 .contact h2{
-    color: #f3747b;
+    color: #49db14;
 }
 .aboutMe h3{
-    color: #e661db;
+    color: #147edb;
     margin: 0 0 70px 0;
     line-height: 100&;
     width: 100%;
 }
 .cProjects h3{
-    color: #8a1950
+    color: #147edb
 }
 .cProjects h4{
     position: absolute;
@@ -151,7 +145,7 @@ p{
     right: 0;
 }
 .contact h3{
-    color: #af61e6;
+    color: #147edb;
 }
 .works-img{
     position: relative;
