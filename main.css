@@ -1,11 +1,168 @@
-.jumbotron{
-    background-color: rgb(37,35,124);
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inconsolata', monospace;
+}
+
+.right-col {
+    background-color: #e661db;
+}
+
+.left-col {
+    background-color: #8a1950;
+
+}
+.top-container{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.left-col,
+.right-col {
+    color: #ffffff;
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.scroll{
+    color: aqua;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+footer {
+    background-color: #712b4d;
+    height: 220px;
+    background-image: url('img/socialmedia.svg');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
     color: white;
-    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 60px;
 }
-.textarea{
-    height: 200px;
+
+.social-icon {
+    height: 60px;
 }
-html{
-    font-size: 1em;
+
+.social-icons-container {
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    color: #99408a;
+    font-family: 'Prata', serif;
+    font-size: 22px;
+}
+
+.navigation {
+    text-align: center;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.navigation li a {
+    color: #99408a;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5 {
+    font-family: 'Prata', serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 150px;
+    margin: 0;
+
+}
+h2{
+    font-size: 100px;
+}
+h3{
+    font-size: 50px;
+}
+h4{
+    font-size: 32px;
+    color: #16736e;
+    background-color: #75e3dd;
+    display: inline-block;
+    margin: 0;
+    padding: 4px;
+}
+p{
+    line-height: 145%;
+}
+.cProjects a {
+    letter-spacing: 2px;
+    color: #53c3c4;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.aboutMe h2{
+    color: #4dc2bd;
+}
+.cProjects h2{
+    color: #003170
+}
+.contact h2{
+    color: #f3747b;
+}
+.aboutMe h3{
+    color: #e661db;
+    margin: 0 0 70px 0;
+    line-height: 100&;
+    width: 100%;
+}
+.cProjects h3{
+    color: #8a1950
+}
+.cProjects h4{
+    position: absolute;
+    z-index: 1;
+    top: -25px;
+}
+.cProjects h4.right-aligned{
+    right: 0;
+}
+.contact h3{
+    color: #af61e6;
+}
+.works-img{
+    position: relative;
+    width: 100%;
+}
+.extra-gutters{
+    padding: 0 60px;
+}
+.right-aligned{
+    text-align: right;
+}
+.img-margin{
+    margin-bottom: 60px;
 }
