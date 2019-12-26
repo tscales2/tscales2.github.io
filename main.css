@@ -8,8 +8,8 @@ body {
 }
 
 
-.top-container{
-    width: 500px;
+.top-container {
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -23,7 +23,8 @@ body {
     align-content: center;
     background-color: #db1449;
 }
-.scroll{
+
+.scroll {
     color: #db1449;
     text-align: center;
 }
@@ -64,6 +65,8 @@ nav {
     color: #3f3d56;
     font-family: 'Prata', serif;
     font-size: 22px;
+    /**background-color: antiquewhite;*/
+   
 }
 
 .navigation {
@@ -74,6 +77,7 @@ nav {
     display: inline-block;
     margin: 0 15px;
 }
+
 .navigation li a {
     color: #3f3d56;
     text-decoration: none;
@@ -90,27 +94,32 @@ h5 {
 }
 
 h1 {
-    font-size: 150px;
+    font-size: 7em;
     margin: 0;
 
 }
-h2{
-    font-size: 100px;
+
+h2 {
+    font-size: 6em;
 }
-h3{
+
+h3 {
     font-size: 50px;
 }
-h4{
-    font-size: 32px;
+
+h4 {
+    font-size: 2em;
     color: #16736e;
     background-color: #61e678;
     display: inline-block;
     margin: 0;
     padding: 4px;
 }
-p{
+
+p {
     line-height: 145%;
 }
+
 .cProjects a {
     letter-spacing: 2px;
     color: #53c3c4;
@@ -118,45 +127,57 @@ p{
     font-weight: bold;
     text-decoration: none;
 }
-.aboutMe h2{
+
+.aboutMe h2 {
     color: #49db14;
 }
-.cProjects h2{
+
+.cProjects h2 {
     color: #49db14
 }
-.contact h2{
+
+.contact h2 {
     color: #49db14;
 }
-.aboutMe h3{
+
+.aboutMe h3 {
     color: #147edb;
     margin: 0 0 70px 0;
     line-height: 100&;
     width: 100%;
 }
-.cProjects h3{
+
+.cProjects h3 {
     color: #147edb
 }
-.cProjects h4{
+
+.cProjects h4 {
     position: absolute;
     z-index: 1;
     top: -25px;
 }
-.cProjects h4.right-aligned{
+
+.cProjects h4.right-aligned {
     right: 0;
 }
-.contact h3{
+
+.contact h3 {
     color: #147edb;
 }
-.works-img{
+
+.works-img {
     position: relative;
     width: 100%;
 }
-.extra-gutters{
+
+.extra-gutters {
     padding: 0 60px;
 }
-.right-aligned{
+
+.right-aligned {
     text-align: right;
 }
-.img-margin{
+
+.img-margin {
     margin-bottom: 60px;
 }
