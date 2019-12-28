@@ -65,7 +65,7 @@ nav {
     color: #3f3d56;
     font-family: 'Prata', serif;
     font-size: 22px;
-    /**background-color: antiquewhite;*/
+   background:
    
 }
 
@@ -120,13 +120,6 @@ p {
     line-height: 145%;
 }
 
-.cProjects a {
-    letter-spacing: 2px;
-    color: #53c3c4;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 .aboutMe h2 {
     color: #49db14;
@@ -157,9 +150,7 @@ p {
     top: -25px;
 }
 
-.cProjects h4.right-aligned {
-    right: 0;
-}
+
 
 .contact h3 {
     color: #147edb;

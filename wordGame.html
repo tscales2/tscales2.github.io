@@ -19,23 +19,20 @@
    <main>
       <div id="container">
         <div class="panel">
-            <h2>Hey, welcome to my guessing game! <br>This game is incredibly hard to win. <br>Happy Playing!</h2>
-            <h3>Good luck!!!</h3>
+            <h2>Word Up!</h2>
+            <h3>Hey, welcome to my guessing game! <br>This game is incredibly hard to win. <br>Happy Playing!!!!</h3>
             <hr>
             <p>Enter either a letter, in all caps, for a list of words starting with that letter or type ALL for the entire list of words: </p>
 
-            
+            <button id="newGameButton" onclick="newGame()">NEW GAME</button>
         </div>
 
         <div class="panel">
             <h3 id="textOutput">Enter your guess below &amp; press enter</h3>
-            <input type="text" id="inputBox" onchange="compareGuess()" autocomplete="off">
-            <p>Words tried: <span id="attempts"></span></p>
-        </div>
-
-        <div class="panel">
+            <input type="text" id="inputBox" onchange="wordsToChoose()" autocomplete="off">
             <p>Your previous guesses:</p>
             <p id="guessLog"></p>
+            
         </div>
     </div>
    </main>
