@@ -17,7 +17,7 @@ body {
 .right-col {
     color: #ffffff;
     text-align: center;
-    height: 90vh;
+    margin-bottom: 3.75rem;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -28,23 +28,28 @@ body {
     color: #db1449;
     text-align: center;
 }
-svg{
-  font: bold 70px Century Gothic, Arial;
-  width: 100%;
-  height: 120px;
+
+svg {
+    font: bold 7.5rem;
+    width: 100%;
+    height: 7.5rem;
+    font-family: 'Prata', serif;
+
 }
 
-text{
-  fill: none;
-  stroke: black;
-  stroke-width:0.5px;
-  // stroke-dasharray: 2,2;
-  stroke-linejoin: round;
-  animation: 2s pulsate infinite;
+text {
+    fill: none;
+    stroke: black;
+    stroke-width: 0.5px;
+    stroke-dasharray: 2, 2;
+    stroke-linejoin: round;
+    animation: 2s pulsate infinite;
 }
 
 @keyframes pulsate {
-  50%{ stroke-width:4px; }
+    50% {
+        stroke-width: 4px;
+    }
 }
 
 img {
@@ -54,21 +59,18 @@ img {
 
 footer {
     background-color: #db1449;
-    height: 220px;
-    background-image: url('img/socialmedia.svg');
-    background-repeat: no-repeat;
-    background-size: 60%;
+    height: 7.5rem;
     background-position: center;
     color: white;
     text-align: center;
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 
 .social-icon {
-    height: 50px;
+    height: 3.125rem;
 }
 
 .social-icons-container {
@@ -80,22 +82,23 @@ nav {
     z-index: 1;
     left: 0;
     right: 0;
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #147edb;
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.063rem;
+    -webkit-text-stroke-color: #147edb;
     font-family: 'Prata', serif;
-    font-size: 22px;
-    
+    font-size: 1.375rem;
+
 }
 
 .navigation {
     text-align: center;
-    
+
 }
 
 .navigation li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 0.938rem;
 }
 
 .navigation li a {
@@ -114,26 +117,26 @@ h5 {
 }
 
 h1 {
-    font-size: 7em;
+    font-size: 7rem;
     margin: 0;
 
 }
 
 h2 {
-    font-size: 6em;
+    font-size: 6rem;
 }
 
 h3 {
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 
 h4 {
-    font-size: 2em;
+    font-size: 2rem;
     color: #16736e;
     background-color: #61e678;
     display: inline-block;
     margin: 0;
-    padding: 4px;
+    padding: 0.25rem;
 }
 
 p {
@@ -155,7 +158,7 @@ p {
 
 .aboutMe h3 {
     color: #147edb;
-    margin: 0 0 70px 0;
+    margin: 0 0 4.375rem 0;
     line-height: 100&;
     width: 100%;
 }
@@ -182,7 +185,7 @@ p {
 }
 
 .extra-gutters {
-    padding: 0 60px;
+    padding: 0 3.75rem;
 }
 
 .right-aligned {
@@ -190,5 +193,5 @@ p {
 }
 
 .img-margin {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
 }
