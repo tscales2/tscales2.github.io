@@ -36,7 +36,9 @@ svg {
     font-family: 'Prata', serif;
 
 }
-
+.M505.837{
+    animation-delay: 2s;
+}
 text {
     fill: none;
     stroke: black;
@@ -46,17 +48,9 @@ text {
     animation: 2s pulsate infinite;
 }
 
-@keyframes pulsate {
-    50% {
-        stroke-width: 4px;
-    }
-}
 
-img {
-    max-width: 100%;
 
-}
-
+  
 footer {
     background-color: #db1449;
     height: 7.5rem;
