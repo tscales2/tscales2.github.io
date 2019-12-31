@@ -36,17 +36,7 @@ svg {
     font-family: 'Prata', serif;
 
 }
-.M505.837{
-    animation-delay: 2s;
-}
-text {
-    fill: none;
-    stroke: black;
-    stroke-width: 0.5px;
-    stroke-dasharray: 2, 2;
-    stroke-linejoin: round;
-    animation: 2s pulsate infinite;
-}
+
 
 
 
@@ -188,4 +178,7 @@ p {
 
 .img-margin {
     margin-bottom: 3.75rem;
+}
+img {
+    max-width: 100%;
 }
