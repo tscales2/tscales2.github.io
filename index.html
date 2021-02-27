@@ -1,27 +1,174 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width = device-width, initial-scale = 1">
-    <title>Under Construction</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap-grid.css">
-    <link rel="stylesheet" type="text/css" href="underConstructionStyle.css">
-    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>Benvenuto!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="site.css" type="text/css" />
+    <link rel="stylesheet" href="bootstrap-grid.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Inconsolata&family=Montserrat&family=Prata&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div class="col">
+    <nav>
+        <ul class="navigation">
+            <li><a href="#home">home</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#me">about me</a></li>
+            <li><a href="#contact">contact me</a></li>
+        </ul>
+    </nav>
+    <header class="row" id="home">
+        <!--left column-->
+        <section class="col left-header-col">
+            <div class="header-container">
+                <h1>ciao!</h1>
+                <p>i love writing, learning languages and playing games.</p>
+            </div>
+
+        </section>
+        <!--right column-->
+        <section class="col right-header-col">
+            <div class="header-container">
+                <img src="img/undraw_book_reading_kx9s.svg"
+                    alt="picture of woman reading a book under a large lightbulb" />
+            </div>
+        </section>
+    </header>
+    <main class="container">
+        <!--projects-->
+        <section class="projects" id="projects">
+            <h2>projects</h2>
+            <!--project 1-->
+            <div class="row no-gutters">
+                <div class="col">
+                    <img src="img/numGamePic.png" class="projects-img" alt="screenshot of game" />
+                </div>
+                <div class="col">
+                    <div class="gutters">
+                        <h3>number what?</h3>
+                        <p>
+                            A simple game where you guess the number, depending on the
+                            difficulty. Work in progress. Made in Javascript
+                        </p>
+                        <a href="img/undraw_under_construction_46pa.svg">Click here to play</a>
+                    </div>
+                </div>
+            </div>
+            <!--project 2-->
+            <div class="row no-gutters">
+                <div class="col projects-right-aligned">
+                    <div class="gutters">
+                        <h3>rainbow block</h3>
+                        <p>
+                            A game where you use a paddle to destroy blocks. Work in progress.
+                            Made in Javascript
+                        </p>
+                        <a href="img/undraw_under_construction_46pa.svg">Click here to play</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/rainbowBreakPic.png" class="projects-img" alt="screenshot of game" />
+                </div>
+            </div>
+            <!--project 3-->
+            <div class="row no-gutters">
+                <div class="col">
+                    <img src="img/spaceInvadersCloneGame.png" class="projects-img" alt="screenshot of game" />
+                </div>
+                <div class="col">
+                    <div class="gutters">
+                        <h3>space invaders clone</h3>
+                        <p>
+                            A simple game where you guess the number, depending on the
+                            difficulty. Work in progress. Made in Javascript
+                        </p>
+                        <a href="img/undraw_under_construction_46pa.svg">Click here to play</a>
+                    </div>
+                </div>
+            </div>
+            <!--project 4-->
+            <div class="row no-gutters">
+                <div class="col projects-right-aligned">
+                    <div class="gutters">
+                        <h3>old website</h3>
+                        <p>
+                            The first iteration of my website, using css, html and javascript.
+                            Also using Bootstrap.
+                        </p>
+                        <a href="img/My Personal Website.png">Click here to view</a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="img/oldPersonalWebsiteDesign.png" class="projects-img imgProject"
+                        alt="screenshot of my old website" />
+                </div>
+            </div>
+        </section>
+        <!--about me-->
+        <section class="aboutMe" id="me">
+            <h2>about me</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="img/undraw_social_bio_8pql.svg" alt="a picture of me" />
+                </div>
+
+                <div class="col">
+                    <h3>some <br> facts about me:</h3>
+                    <p>
+                    <ul>
+                        <li>My name is Takinah</li>
+                        <li>I'm in the software development/web design/frontend field</li>
+                        <li>I like write, mostly poetry</li>
+                        <li>I like to make mini games whenever possible</li>
+                        <li>I graduate from the University of North Carolina at
+                            Charlotte with a BA in computer science and a minor in Italian</li>
+                        <li> I also love baking and I have a huge sweet tooth</li>
+                    </ul>
+
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/me_002.jpg" alt="a picture of me" />
 
 
+                </div>
+            </div>
+        </section>
 
-        <img src="img/undraw_under_construction_46pa.svg" alt="two people building a house which is half built" class="con-img "/>
-        <h1>Still working on it...</h1>
+        <!--contact-->
+        <section class="contact" id="contact">
+            <h2>contact</h2>
+            <div class="row">
+                <div class="col">
+                    <p>Email: youemail@email.com</p>
+                    <p>Feel free to follow me on social media to see what I'm up to.</p>
+                </div>
+                <div class="col"><img src="img/undraw_social_girl_562b.png" /></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="social-icon-container">
+                <a href="https://twitter.com/TakinahS">
+                    <img src="img/iconfinder_social_54_492996.svg" class="social-icon" /></a>
+                <a href="https://www.linkedin.com/in/takinahscales/"><img src="img/iconfinder_social_48_492992.svg"
+                        class="social-icon" /></a>
+                <a href="https://github.com/tscales2"><img src="img/iconfinder_social_39_492985.svg"
+                        class="social-icon" /></a>
+            </div>
 
-    </div>
-
-
-
+            <p>
+                Designed by Takinah, with help from Skillshare. 
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
