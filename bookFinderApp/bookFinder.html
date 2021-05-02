@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset=utf-8>
+   <title>What to Read?</title>
+   <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/dna.js@1.7/dist/dna.css>
+   <link rel="stylesheet" href="bootstrap-grid.css" type="text/css" />
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Inconsolata&family=Montserrat&family=Prata&display=swap"
+      rel="stylesheet">
+   <link rel=stylesheet href="bookFinder.css">
+
+</head>
+
+<body>
+
+   <main>
+      <h1>What to Read?</h1>
+      <label>
+         Search Author name or :
+         <input data-smart-update=findBooksWithGoogle placeholder="Enter" autofocus>
+      </label>
+      <section class=books>
+         <div id=book class=dna-template>
+            <img src=~~volumeInfo.imageLinks.thumbnail~~ alt=cover>
+            <div>
+               <h2>~~volumeInfo.title~~</h2>
+               <p>~~volumeInfo.publisher~~</p>
+               <i>~~saleInfo.listPrice.amount~~</i>
+            </div>
+         </div>
+      </section>
+
+   </main>
+   <script>
+      const findBooksWithGoogle = (elem) => {
+         const terms = elem.val();
+         const url = "https://www.googleapis.com/books/v1/volumes";
+         const handleResults = (data) =>
+            dna.clone("book", data.items, { empty: true, fade: true });
+         fetchJson.get(url, { q: terms }).then(handleResults);
+         console.log(terms); //verify user input
+      };
+   </script>
+   <script src="bookFinderApp/bookFinder.js"></script>
+   <script src=https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js></script>
+   <script src=https://cdn.jsdelivr.net/npm/dna.js@1.7/dist/dna.min.js></script>
+   <script src=https://cdn.jsdelivr.net/npm/fetch-json@2.4/dist/fetch-json.min.js></script>
+</body>
+
+</html>
