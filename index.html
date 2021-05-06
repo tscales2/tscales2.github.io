@@ -55,7 +55,7 @@
                             A simple game where you guess the number, depending on the
                             difficulty. Work in progress. Made in Javascript
                         </p>
-                        <a href="img/undraw_under_construction_46pa.svg">Click here to play</a>
+                        <!-- <a href="img/undraw_under_construction_46pa.svg">Click here to play</a> -->
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                             A game where you use a paddle to destroy blocks. Work in progress.
                             Made in Javascript
                         </p>
-                        <a href="img/undraw_under_construction_46pa.svg">Click here to play</a>
+                        <!-- <a href="img/undraw_under_construction_46pa.svg">Click here to play</a> -->
                     </div>
                 </div>
                 <div class="col">
@@ -203,9 +203,25 @@
 
             <p>
                 Designed by Takinah, with help from Skillshare. 
+                
             </p>
         </div>
+       
+          
     </footer>
+    <div>
+        <p>Hits: <span id="cntr">0</span></p>
+      </div>
 </body>
-
+<script>
+    function counter_fn() {
+      var counter = document.getElementById("cntr");
+      var count = 0;
+      count = parseInt(counter.innerHTML);
+      count = count + 1;
+      counter.innerHTML = count;
+    }
+    window.onload = counter_fn;
+  
+</script>
 </html>
