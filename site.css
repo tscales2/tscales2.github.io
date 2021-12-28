@@ -34,15 +34,15 @@ h3 {
   font-size: 3.125rem;
   color: #dbc014;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 p {
   line-height: 145%;
 }
 img {
-    max-width: 100%;
-  }
+  max-width: 100%;
+}
 .navigation {
   text-align: center;
   margin: 0 auto;
@@ -50,10 +50,9 @@ img {
 .navigation li {
   display: inline-block;
   margin: 0 0.938rem;
-  
 }
-.navigation li a{
-    color: #147edb;
+.navigation li a {
+  color: #147edb;
 }
 .left-header-col,
 .right-header-col {
@@ -84,27 +83,27 @@ img {
   text-align: right;
 }
 .projects a {
-    letter-spacing: 0.125rem;
-    color: #147edb;
-    font-size: 1.125rem;
-    text-decoration: none;
-    font-weight: bold;
-  }
+  letter-spacing: 0.125rem;
+  color: #147edb;
+  font-size: 1.125rem;
+  text-decoration: none;
+  font-weight: bold;
+}
 .aboutMe h3 {
   margin: 0 0 4.375 rem 0;
   line-height: 100%;
 }
-.img-margin{
-    margin-bottom: 2.5rem;
+.img-margin {
+  margin-bottom: 2.5rem;
 }
-.projects img:hover{
-    opacity: 0.3;
-    transition: opacity .5s;
-    background-color: #db1449;
+.projects img:hover {
+  opacity: 0.3;
+  transition: opacity 0.5s;
+  background-color: #db1449;
 }
-.imgProject{
-    object-fit: cover;
-    margin-bottom: 3.75rem;
+.imgProject {
+  object-fit: cover;
+  margin-bottom: 3.75rem;
 }
 footer {
   background-color: #db1449;
@@ -116,7 +115,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:3.75rem;
+  margin-top: 3.75rem;
 }
 .social-icon {
   height: 3.125rem;
@@ -126,14 +125,22 @@ footer {
   text-align: center;
 }
 .gr_grid_container {
-  /* customize grid container div here. eg: width: 500px; */
+  width: 43.75rem;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Inconsolata", monospace;
 }
 
 .gr_grid_book_container {
-  /* customize book cover container div here */
   float: left;
-  width: 98px;
-  height: 160px;
+  width: 6.25rem !important;
+  height: 10rem !important;
   padding: 0px 0px;
   overflow: hidden;
+}
+.grid-font{
+  font-size: 6.25rem;
+  font-family: "Prata", serif;
+  font-weight: normal;
+  text-align: center;
 }
