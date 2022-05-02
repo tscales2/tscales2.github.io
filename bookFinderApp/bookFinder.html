@@ -6,9 +6,10 @@
    <title>What to Read?</title>
    <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/dna.js@1.7/dist/dna.css>
    <link rel="stylesheet" href="bootstrap-grid.css" type="text/css" />
-   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link
-      href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Inconsolata&family=Montserrat&family=Prata&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Patrick+Hand&display=swap"
       rel="stylesheet">
    <link rel=stylesheet href="bookFinder.css">
 
@@ -16,22 +17,52 @@
 
 <body>
 
-   <main>
-      <h1>What to Read?</h1>
-      <label>
-         Search Author name or Title :
-         <input data-smart-update=findBooksWithGoogle placeholder="Enter" autofocus>
-      </label>
-      <section class=books>
-         <div id=book class=dna-template>
-            <img src=~~volumeInfo.imageLinks.thumbnail~~ alt=cover>
-            <div>
-               <h2>~~volumeInfo.title~~</h2>
-               <p>~~volumeInfo.authors[0]~~</p>
-               <i>~~saleInfo.listPrice.amount~~</i>  <i>~~saleInfo.listPrice.currencyCode~~</i>
+   <main class="container">
+      <div class="row">
+         <div class="col">
+            <h1>What to Read?</h1>
+            <label>
+               Search Author Name or Title :
+               <input data-smart-update=findBooksWithGoogle placeholder="Enter A Name" autofocus>
+            </label>
+         </div>
+         <div class="col">
+            <div class="books">
+               <div id=book class=dna-template>
+                  <a href=" ~~volumeInfo.infoLink~~"> <img src=~~volumeInfo.imageLinks.thumbnail~~ alt=cover></a>
+                  <div>
+                     <div class="row">
+                        <div class="col">
+                           <h2>~~volumeInfo.title~~</h2>
+                          
+                        </div>
+                        <div class="col">
+                           <h3>~~volumeInfo.authors[0]~~</h3>
+                        </div>
+                        <div class="col">
+                           <h4>~~volumeInfo.publisher~~</h4>
+                        </div>
+                        <div class="col">
+                           
+                           <h4> <b>Page Count: </b>
+                            <i>~~volumeInfo.pageCount~~</i></h4>
+                        </div>
+                     </div>
+                     
+                     
+                    
+
+                     <b>~~saleInfo.retailPrice.amount~~</b>
+                     <i>~~saleInfo.retailPrice.currencyCode~~</i>
+
+                  </div>
+               </div>
             </div>
          </div>
-      </section>
+      </div>
+
+
+
 
    </main>
    <script>
