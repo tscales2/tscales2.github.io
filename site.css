@@ -32,7 +32,7 @@ h2 {
 }
 h3 {
   font-size: 3.125rem;
-  color: #dbc014;
+  color: #db1449;
 }
 a {
   text-decoration: none;
@@ -52,7 +52,7 @@ img {
   margin: 0 0.938rem;
 }
 .navigation li a {
-  color: #147edb;
+  color: #fff;
 }
 .left-header-col,
 .right-header-col {
