@@ -36,6 +36,7 @@ h3 {
 }
 a {
   text-decoration: none;
+  color: #000;
 }
 p {
   line-height: 145%;
@@ -52,7 +53,7 @@ img {
   margin: 0 0.938rem;
 }
 .navigation li a {
-  color: #fff;
+  color: #000;
 }
 .left-header-col,
 .right-header-col {
