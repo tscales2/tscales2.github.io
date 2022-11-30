@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
    <meta charset=utf-8>
@@ -23,34 +23,46 @@
             <h1>What to Read?</h1>
             <label>
                Search Author Name or Title :
-               <input data-smart-update=findBooksWithGoogle placeholder="Enter A Name" autofocus>
+               <input data-smart-update=findBooksWithGoogle placeholder="Author Name" autofocus>
             </label>
          </div>
          <div class="col">
             <div class="books">
                <div id=book class=dna-template>
-                  <a href=" ~~volumeInfo.infoLink~~"> <img src=~~volumeInfo.imageLinks.thumbnail~~ alt=cover></a>
+                  <a href=" ~~volumeInfo.infoLink~~"> <img src=~~volumeInfo.imageLinks.thumbnail~~
+                        alt="cover of the book"></a>
                   <div>
                      <div class="row">
                         <div class="col">
-                           <h2>~~volumeInfo.title~~</h2>
+                           <h1>~~volumeInfo.title~~</h1>
+
+                        </div>
+                        <div class="col">
+                           <h2>~~volumeInfo.subtitle~~</h2>
+                        </div>
+                        
+                        <div class="col">
                           
-                        </div>
-                        <div class="col">
-                           <h3>~~volumeInfo.authors[0]~~</h3>
-                        </div>
-                        <div class="col">
                            <h4>~~volumeInfo.publisher~~</h4>
+
+
                         </div>
                         <div class="col">
-                           
+                           <h4><b>Date Published: </b> <i>~~volumeInfo.publishedDate~~</i></h4>
+                        </div>
+                        <div class="col">
+
                            <h4> <b>Page Count: </b>
-                            <i>~~volumeInfo.pageCount~~</i></h4>
+                              <i>~~volumeInfo.pageCount~~</i>
+                           </h4>
+                        </div>
+                        <div class="col">
+                           <h3>~~volumeInfo.authors[]~~</h3>
                         </div>
                      </div>
-                     
-                     
-                    
+
+
+
 
                      <b>~~saleInfo.retailPrice.amount~~</b>
                      <i>~~saleInfo.retailPrice.currencyCode~~</i>
@@ -74,6 +86,13 @@
          fetchJson.get(url, { q: terms }).then(handleResults);
          console.log(terms); //verify user input
       };
+      /* const findBooksWithGoogleAuthors = (elem) => {
+         const terms = elem.val();
+         const url = "https://www.googleapis.com/books/v1/volumes";
+         const handleResults = (data) => dna.clone("book",data.items.authors,{ empty: true, fade: true });
+         fetchJson.get(url, { q: terms }).then(handleResults);
+         console.log(terms); //verify user input )
+      } */
    </script>
    <script src="bookFinderApp/bookFinder.js"></script>
    <script src=https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js></script>
